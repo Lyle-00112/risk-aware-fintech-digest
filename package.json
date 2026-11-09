@@ -1,0 +1,21 @@
+{
+  "name": "risk-aware-fintech-digest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/fintech_digest_service.ts serve",
+    "schedule": "tsx src/fintech_digest_service.ts schedule",
+    "example": "tsx src/fintech_digest_service.ts example",
+    "test": "node --import tsx --test test/digest_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
